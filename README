@@ -1,1 +1,45 @@
-hi
+# Question Answering with Hugging Face Transformers
+
+This repository contains code for training a question answering model using the Hugging Face Transformers library with PyTorch support. 
+The model is fine-tuned on the SQuAD (Stanford Question Answering Dataset) dataset.
+
+## Introduction
+
+Question answering (QA) is a natural language processing task where a machine learns to answer questions posed in natural language. 
+This repository demonstrates how to fine-tune a pre-trained transformer model for question answering tasks using the Hugging Face Transformers library.
+
+## Installation
+
+To install the necessary libraries, run the following commands:
+
+!pip install transformers datasets evaluate
+!pip install transformers[torch]
+
+##Getting Started
+Load the SQuAD dataset: 
+The SQuAD dataset is a widely used benchmark for question answering tasks.
+We load the SQuAD dataset and split it into train and test sets in 80 and 20 percentage.
+Tokenize the dataset:
+We tokenize the dataset using a pre-trained tokenizer provided by the Hugging Face Transformers library.
+Initialize the model and training arguments: 
+We use a pre-trained question answering model"deepset/roberta-base-squad2" and 
+initialize the training arguments such as learning rate, batch size, and number of epochs.
+Train the model: 
+We train the model on the tokenized dataset using the Trainer class provided by the Transformers library.
+Perform inference:
+Once the model is trained, we can perform inference by providing a question and context to the trained model, which returns the predicted answer.
+Evaluate the model: 
+We evaluate the performance of the trained model using evaluation metrics 
+such as F1 score and accuracy on a separate evaluation dataset.
+
+
+Results
+We achieve the following results on the evaluation dataset:
+
+F1 Score: 100
+Accuracy: 1
+
+
+Credits
+This project is based on the Hugging Face Transformers library and the SQuAD dataset.
+

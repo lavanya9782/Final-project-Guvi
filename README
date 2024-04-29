@@ -33,6 +33,14 @@ We evaluate the performance of the trained model using evaluation metrics
 such as F1 score and accuracy on a separate evaluation dataset.
 
 
+Usage
+Run the Streamlit application by executing the following command in your terminal:
+streamlit run UIstreamlitQAmodel.py
+Once the application is running, you can access it in your web browser at http://localhost:8501.
+Enter your question in the input field labeled "Enter your question".
+Enter the context in the text area labeled "Enter the context".
+Click the "Get Answer" button to retrieve the answer.
+
 Results
 We achieve the following results on the evaluation dataset:
 

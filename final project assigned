@@ -1,0 +1,65 @@
+Project Title: Building and Deploying a Question Answering System with Hugging Face
+Problem Statement
+Inefficient Information Retrieval: Finding specific answers within large volumes of text (documents, websites, etc.) can be time-consuming and frustrating.
+Limited Search Capabilities: Traditional search engines often focus on keyword matching rather than understanding the true intent of a user's query.
+Lack of Contextual Understanding: Search tools may struggle to provide accurate answers when questions are complex or require understanding the relationships between entities within the text.
+Accessibility of Information: Valuable information can be locked within specialized documents or formats that are not easily searchable by the general public.
+Need for Domain-Specific QA: Businesses and organizations often need to quickly access information within their internal knowledge bases, which may not be readily indexed by public search engines.
+
+Context
+A QA (Question Answering) system is like a super-smart search engine that understands your questions and tries to find the exact answer within a given text.
+Instead of just giving you links, it reads the information and figures out the most likely answer.
+These systems use machine learning to learn how to find answers like a human would.
+They can be used to quickly find information in big documents, websites, or even to power chatbots that answer your questions.
+Think of it as having a personal research assistant that digs for the specific answer you need!
+
+Approach
+Dataset Selection: Identify an appropriate dataset for your QA system. Consider the domain (e.g., news articles, company reports, product manuals, scientific literature). Popular QA datasets include SQuAD, NewsQA, Natural Questions.
+Data Preprocessing: Clean and prepare your dataset for training. This might involve text normalization, tokenization, and structuring the data into question-context-answer triplets.
+Model Selection: Choose a suitable pre-trained Question Answering model from the Hugging Face Model Hub. Consider models like BERT, DistilBERT, or RoBERTa, which are fine-tuned for QA.
+Fine-Tuning: Fine-tune the selected model on your dataset using the Hugging Face Transformers library. Experiment with hyperparameters to optimize performance.
+Evaluation: Measure your model's performance using standard QA metrics like Exact Match (EM) and F1 score. Analyze errors to identify areas for improvement.
+Deployment: Deploy your fine-tuned model as a web application using tools like Gradio, Streamlit, or Flask, allowing users to interact with it.
+
+Data Example
+Context: "The Amazon rainforest is one of the world's most biodiverse habitats. It covers a vast area of South America, spanning multiple countries. The Amazon plays a critical role in regulating the global climate."
+Question: "What role does the Amazon rainforest play in the climate?"
+Answer: "The Amazon plays a critical role in regulating the global climate."
+Expected Output Format:
+The QA system should take a question and relevant context as input and provide a concise and accurate answer extracted from the context. Try use Gradio to make UI just from jupyter notebooks
+Questions
+What is the difference between extractive and generative Question Answering systems?
+Explain the role of the Transformers library in building a QA system.
+How does fine-tuning a pre-trained model improve its performance on a specific QA task?
+Describe the trade-offs between different QA model architectures in terms of accuracy, speed, and resource requirements.
+What are the challenges of deploying a QA model in a production environment?
+How would you evaluate the success of your QA system beyond accuracy metrics?
+Discuss strategies to handle ambiguous or unanswerable questions.
+How can you collect feedback or data to continuously improve your QA system?
+How can QA systems be made more robust to handle noisy or unseen data?
+What ethical considerations should be taken into account when building a QA system?
+Project Purpose and Skills Tested
+Purpose: This project exposes you to core NLP concepts and the practical application of QA for knowledge extraction and search enhancement.
+Skills:
+Data preparation and understanding
+Fine-tuning Transformer models
+Model deployment
+Familiarity with Hugging Face ecosystem
+Understanding NLP concepts for Question Answering
+Implement the above system using an Open source LLMs(OPTIONAL)
+Pylint -> 
+def test(a, b):
+	‘’’Print two number
+A - i
+
+Project Evaluation metrics:
+You are supposed to write a code in a modular fashion (in functional blocks)
+Maintainable: It can be maintained, even as your codebase grows.
+Portable: It works the same in every environment (operating system)
+You have to maintain your code on GitHub.(Mandatory)
+You have to keep your GitHub repo public so that anyone can check your code.(Mandatory)
+Proper readme file you have to maintain for any project development(Mandatory)
+You should include basic workflow and execution of the entire project in the readme file on GitHub
+Follow the coding standards: https://www.python.org/dev/peps/pep-0008/
+You need to Create a Demo video of your working model and post in LinkedIn(Mandatory)
+
